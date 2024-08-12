@@ -7,7 +7,7 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Sign Up:', { email, password, name });
+    console.log('Sign Up:', { email, password, name }); 
   };
 
   return (
@@ -23,7 +23,7 @@ function SignUp() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm sm:text-sm"
             />
           </div>
           <div>
