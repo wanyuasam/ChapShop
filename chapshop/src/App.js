@@ -1,17 +1,17 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import SignUp from './components/Signup';
-import SignIn from './components/Signin';
-import Home from './components/Home';
-
-function App() {
+import React from 'react'
+import TourCard from './components/TourCard'
+import { Container } from '@mui/material'
+import {Grid} from '@mui/material'
+const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/signin" element={<SignIn />} />
-    </Routes>
-  );
+    <div className='App'>
+      <Container>
+        <Grid container spacing={2}>
+          <TourCard/>
+        </Grid>
+      </Container>
+    </div>
+  )
 }
 
-export default App;
+export default App
