@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className='App'>
       <Button variant="text" size='small'>HDKSJF</Button>
-      <Button variant="contained" startIcon={<DeleteIcon />}>Delete</Button>
+      <Button variant="contained" startIcon={<DeleteIcon />} color='primary'>Delete</Button>
       <Button variant="outlined"href='https://youtube.com'>Outlined</Button>
       <Button variant='contained'  disabled>Unique Button</Button>
       <BlueButton>THEOIJ</BlueButton>
