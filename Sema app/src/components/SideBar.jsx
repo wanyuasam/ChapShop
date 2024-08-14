@@ -8,9 +8,9 @@ const Sidebar = () => {
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
         <List>
-          <ListItem disablePadding>
+          <ListItem disablePadding >
             <ListItemButton component="a" href="#home">
-              <ListItemIcon>
+              <ListItemIcon  sx={{ color: 'black' }}  >
                 <Home />
               </ListItemIcon>
               <ListItemText primary="Homepage" />
@@ -18,7 +18,7 @@ const Sidebar = () => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ color: 'black' }}>
                 <Person />
               </ListItemIcon>
               <ListItemText primary="Friends" />
@@ -26,7 +26,7 @@ const Sidebar = () => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ color: 'black' }}>
                 <Settings />
               </ListItemIcon>
               <ListItemText primary="Settings" />
@@ -34,7 +34,7 @@ const Sidebar = () => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemIcon>
+              <ListItemIcon sx={{ color: 'black' }}>
                 <AccountBox />
               </ListItemIcon>
               <ListItemText primary="Profile" />
