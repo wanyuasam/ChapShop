@@ -19,9 +19,18 @@ const Search = styled("div")(({theme}) => ({
 
 const Icons = styled(Box)(({theme}) => ({
     // backgroundColor: "white"
+    display: "none",
+    alignItems: "center",
+    gap: "30px",
+    [theme.breakpoints.up("sm")]: {
+        display: "flex"
+    }
+}));
+
+const UserBox = styled(Box)(({theme}) => ({
     display: "flex",
     alignItems: "center",
-    gap: "30px"
+    gap: "10px"
 }))
 const Navbar = () => {
 
@@ -40,6 +49,10 @@ const Navbar = () => {
                 </Badge>
                 <Avatar alt="Remy Sharp" sx={{width: 36, height: 36}} src="/static/images/avatar/1.jpg" />
             </Icons>
+            <UserBox>
+                <Avatar alt="Remy Sharp" sx={{width: 36, height: 36}} src="/static/images/avatar/1.jpg" />
+                <Typography variant='span'>Alex</Typography>
+            </UserBox>
         </StyledToolBar>
     </AppBar>
   )
