@@ -1,6 +1,9 @@
-import { AppBar, Box, styled, Toolbar, Typography } from '@mui/material'
+import { AppBar, Avatar, Badge, Box, styled, Toolbar, Typography } from '@mui/material'
 import ForumIcon from '@mui/icons-material/Forum';
+import { InputBase } from '@mui/material'
+import MailIcon from '@mui/icons-material/Mail';
 import React from 'react'
+import { Notifications } from '@mui/icons-material';
 
 const StyledToolBar = styled(Toolbar)({
     display: "flex",
@@ -15,7 +18,10 @@ const Search = styled("div")(({theme}) => ({
 }));
 
 const Icons = styled(Box)(({theme}) => ({
-    backgroundColor: "white"
+    // backgroundColor: "white"
+    display: "flex",
+    alignItems: "center",
+    gap: "30px"
 }))
 const Navbar = () => {
 
@@ -24,8 +30,16 @@ const Navbar = () => {
         <StyledToolBar>
             <Typography variant='h6' sx={{display: {xs: "none", sm: "block"}}}>Sema</Typography>
             <ForumIcon sx={{display: {xs: "block", sm: "none"}}}/>
-            <Search>search</Search>
-            <Icons>Icons</Icons>
+            <Search><InputBase placeholder='Search here...'/></Search>
+            <Icons>
+                <Badge badgeContent={4} color="error">
+                    <MailIcon />
+                </Badge>
+                <Badge badgeContent={4} color="error">
+                    <Notifications />
+                </Badge>
+                <Avatar alt="Remy Sharp" sx={{width: 36, height: 36}} src="/static/images/avatar/1.jpg" />
+            </Icons>
         </StyledToolBar>
     </AppBar>
   )
