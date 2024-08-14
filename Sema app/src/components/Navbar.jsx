@@ -9,7 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 
 const StyledToolBar = styled(Toolbar)({
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    backgroundColor: "black"
 });
 
 const Search = styled("div")(({theme}) => ({
@@ -53,11 +54,11 @@ const Navbar = () => {
                 <Badge badgeContent={4} color="error">
                     <Notifications />
                 </Badge>
-                <Avatar alt="Remy Sharp" sx={{width: 36, height: 36}} src="/static/images/avatar/1.jpg" onClick={e => setOpen(true)}/>
+                <Avatar alt="profile picture" sx={{width: 36, height: 36}} src="https://www.compassion.com/Images/child-smiling-bg-wearing-kenyan-necklaces-made-of-beads.jpeg" onClick={e => setOpen(true)}/>
             </Icons>
             <UserBox onClick={(e) => setOpen(true)}>
-                <Avatar alt="Remy Sharp" sx={{width: 36, height: 36}} src="/static/images/avatar/1.jpg" />
-                <Typography variant='span'>Alex</Typography>
+                <Avatar alt="profile picture" sx={{width: 36, height: 36}} src="https://www.compassion.com/Images/child-smiling-bg-wearing-kenyan-necklaces-made-of-beads.jpeg" />
+                <Typography variant='span'>Alex Kiprono</Typography>
             </UserBox>
         </StyledToolBar>
         <Menu
