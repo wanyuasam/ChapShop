@@ -10,7 +10,7 @@ import InboxIcon from '@mui/icons-material/Inbox';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import SendIcon from '@mui/icons-material/Send';
 import ScheduleSendIcon from '@mui/icons-material/ScheduleSend';
-
+import CancelScheduleSendIcon from '@mui/icons-material/CancelScheduleSend';
 
 const RightBar = () => {
   return (
@@ -47,6 +47,14 @@ const RightBar = () => {
                 <DraftsIcon />
               </ListItemIcon>
               <ListItemText primary="Drafts" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <CancelScheduleSendIcon />
+              </ListItemIcon>
+              <ListItemText primary="Archived" />
             </ListItemButton>
           </ListItem>
         </List>
