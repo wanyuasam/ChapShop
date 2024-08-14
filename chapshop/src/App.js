@@ -1,17 +1,21 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import SignUp from './components/Signup';
-import SignIn from './components/Signin';
-import Home from './components/Home';
-
-function App() {
+import React from 'react'
+import SideBar from './components/SideBar'
+import  Feed from './components/Feed'
+import RightBar from './components/RightBar'
+import { Box, Stack } from '@mui/material'
+import Navbar from './components/Navbar'
+const App = () => {
+  
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/signin" element={<SignIn />} />
-    </Routes>
-  );
+    <Box className='App' >
+      <Navbar />
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <SideBar/>
+        <Feed />
+        <RightBar />
+      </Stack>
+    </Box>
+  )
 }
 
-export default App;
+export default App
