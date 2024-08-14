@@ -17,7 +17,7 @@ import {AccountBox,Article,Group,Home,ModeNight,Person,Settings,Storefront} from
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="#simple-list">
+              <ListItemButton component="a" href="#articles">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
