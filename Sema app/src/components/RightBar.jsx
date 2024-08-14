@@ -15,7 +15,7 @@ const Rightbar = () => {
           />
           
           <Avatar
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN_UdmVPfL7QTBvd4flglK8BIJQSMQ1YfxEA&s"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM1mg3jdPsRRoGOEK7sptfdFFaA2SMHWjbJg&s"
             alt="avatar image"
           />
           <Avatar

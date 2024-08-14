@@ -17,7 +17,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="#friends">
               <ListItemIcon sx={{ color: 'black' }}>
                 <Person />
               </ListItemIcon>
@@ -25,7 +25,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="#settings">
               <ListItemIcon sx={{ color: 'black' }}>
                 <Settings />
               </ListItemIcon>
@@ -33,7 +33,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="#profile">
               <ListItemIcon sx={{ color: 'black' }}>
                 <AccountBox />
               </ListItemIcon>
